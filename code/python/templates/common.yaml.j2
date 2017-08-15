@@ -1,0 +1,23 @@
+---
+ambari_server: {{ nodes[0] }}
+
+master_nodes:
+{%- for node in nodes[0:3] %} 
+  - {{ node }}
+{%- endfor %}
+
+worker_nodes:
+{%- for node in nodes[3:6] %}
+  - {{ node }}
+{%- endfor %}
+
+elastic_nodes: {{ nodes[6] }}
+
+ambari_repo_url: 
+
+hdp_repo_url: 
+
+hdp_utils_repo_url: 
+
+internal_repo_url: 
+

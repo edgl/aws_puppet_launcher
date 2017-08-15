@@ -1,0 +1,85 @@
+hdphost1
+i-01e7187602ea14264
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-13-59-55-27.us-east-2.compute.amazonaws.com
+13.59.55.27
+hwx_hdp_demo
+hari-security-group
+ip-172-31-33-221.us-east-2.compute.internal
+172.31.33.221
+hdphost2
+i-070fd5bc9b6e1dd0a
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-13-58-180-114.us-east-2.compute.amazonaws.com
+13.58.180.114
+hwx_hdp_demo
+hari-security-group
+ip-172-31-37-125.us-east-2.compute.internal
+172.31.37.125
+hdphost3
+i-0774c21c7dcaa11fe
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-52-14-226-146.us-east-2.compute.amazonaws.com
+52.14.226.146
+hwx_hdp_demo
+hari-security-group
+ip-172-31-40-253.us-east-2.compute.internal
+172.31.40.253
+hdphost4
+i-0a9482504af228686
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-52-15-171-252.us-east-2.compute.amazonaws.com
+52.15.171.252
+hwx_hdp_demo
+hari-security-group
+ip-172-31-37-143.us-east-2.compute.internal
+172.31.37.143
+hdphost5
+i-0b7a602f81860fc7c
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-18-220-151-153.us-east-2.compute.amazonaws.com
+18.220.151.153
+hwx_hdp_demo
+hari-security-group
+ip-172-31-32-111.us-east-2.compute.internal
+172.31.32.111
+hdphost6
+i-0bbbbf3457b4d0e3d
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-13-59-182-137.us-east-2.compute.amazonaws.com
+13.59.182.137
+hwx_hdp_demo
+hari-security-group
+ip-172-31-36-215.us-east-2.compute.internal
+172.31.36.215
+hdphost7
+i-0de2d780aa006eecd
+m4.xlarge
+us-east-2c
+ running
+ Initializing
+ec2-18-220-161-134.us-east-2.compute.amazonaws.com
+18.220.161.134
+hwx_hdp_demo
+hari-security-group
+ip-172-31-46-253.us-east-2.compute.internal
+172.31.46.253
+

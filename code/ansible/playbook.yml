@@ -1,0 +1,32 @@
+---
+- hosts: all
+  become: true
+
+  tasks: 
+  - name: "Copy hostfile to hosts"
+    copy: 
+      src: ../hostfile
+      dest: /tmp/hostfile
+  
+  - name: "Prepare common activities"
+    script: ../bash/puppet_prep_common.sh
+
+  - name: "Prepare puppet agent"
+    script: ../bash/puppet_agent_prep.sh `head -1 /tmp/hostfile`
+
+- hosts: puppetmaster
+  become: true
+
+  tasks:
+  - name: "Copy private key to hosts"
+    tags: private_key
+    copy: 
+      src: ../hwx_hdp_demo.pem
+      dest: /root/.ssh/hwx_hdp_demo.pem
+      mode: 0400
+
+  - name: "Prepare puppet server"
+    tags: private_key
+    script: ../bash/puppet_server_prep.sh
+
+  

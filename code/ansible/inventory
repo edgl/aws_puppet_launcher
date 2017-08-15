@@ -1,0 +1,15 @@
+[puppetmaster]
+hdphost1 ansible_host=13.59.55.27
+
+[puppetagent]
+hdphost2  ansible_host=13.58.180.114
+hdphost3  ansible_host=52.14.226.146
+hdphost4  ansible_host=52.15.171.252
+hdphost5  ansible_host=18.220.151.153
+hdphost6  ansible_host=13.59.182.137
+hdphost7  ansible_host=18.220.161.134
+
+
+[all:vars]
+ansible_ssh_private_key_file=/Users/egleeck/amazon_keypairs/hwx_hdp_demo.pem
+ansible_user=ec2-user

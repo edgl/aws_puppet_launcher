@@ -1,0 +1,12 @@
+$ambari_server    = '{{ nodes[0] }}'
+$master_nodes     = [
+{% for i in range(3) -%}
+        '{{ nodes[i] }}',
+{% endfor %}]
+$worker_nodes     = [
+{% for i in range(3,6) -%}
+        '{{ nodes[i] }}',
+{% endfor %}
+       ]
+$elastic_nodes	= '{{ nodes[6] }}'
+

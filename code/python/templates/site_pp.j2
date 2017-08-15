@@ -1,0 +1,32 @@
+node '{{ nodes[0] }}' {
+  include ambari
+
+  class { 'ambari::os':} ->  
+  class { 'ambari::repo':} ->  
+  class { 'ambari::agent':} ->  
+  class { 'ambari::server':} ->
+  class { 'ambari::blueprint':}  
+}
+
+node {% for host in nodes[1:- 1] %} '{{ host }}'{% if not loop.last %},{% endif %}
+{% endfor %} {    
+ include ambari  
+
+  class { 'ambari::os':} ->  
+  class { 'ambari::repo':} ->  
+  class { 'ambari::agent':}   
+
+}
+
+node '{{ nodes[-1] }}' {
+  include ambari
+
+  class { 'ambari::os':} ->
+  class { 'ambari::repo':} ->
+  class { 'ambari::agent':} ->
+  class { 'bdpenv::jetty9': } ->
+  class { 'bdpenv::openldap': } ->
+  class { 'bdpenv::nginx': }
+
+}
+
